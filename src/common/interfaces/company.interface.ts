@@ -313,6 +313,7 @@ export interface Settings {
   client_portal_terms: string;
   client_portal_privacy_policy: string;
   client_portal_enable_uploads: boolean;
+  client_portal_restrict_to_contact: boolean;
   client_portal_allow_under_payment: boolean;
   client_portal_under_payment_minimum: number;
   client_portal_allow_over_payment: boolean;
