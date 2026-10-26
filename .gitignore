@@ -43,3 +43,14 @@ cypress/screenshots
 # Playwright
 node_modules/
 /playwright/.auth/
+
+# AI tool files
+# CLAUDE.md
+# boost.json
+# AGENTS.md
+# junie/
+# .agents/
+# .claude/
+# .codex/
+# .cursor/
+# .mcp.json
