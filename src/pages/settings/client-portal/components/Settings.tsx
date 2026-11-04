@@ -258,6 +258,29 @@ export function Settings() {
       <Element
         leftSide={
           <PropertyCheckbox
+            propertyKey="client_portal_restrict_to_contact"
+            labelElement={
+              <SettingsLabel
+                label={t('client_portal_restrict_to_contact')}
+                helpLabel={t('client_portal_restrict_to_contact_help')}
+              />
+            }
+            defaultValue={false}
+          />
+        }
+      >
+        <Toggle
+          checked={Boolean(company?.settings.client_portal_restrict_to_contact)}
+          onValueChange={(value) =>
+            handleChange('settings.client_portal_restrict_to_contact', value)
+          }
+          disabled={disableSettingsField('client_portal_restrict_to_contact')}
+        />
+      </Element>
+
+      <Element
+        leftSide={
+          <PropertyCheckbox
             propertyKey="vendor_portal_enable_uploads"
             labelElement={
               <SettingsLabel
