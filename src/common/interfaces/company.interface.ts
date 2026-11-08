@@ -348,6 +348,7 @@ export interface Settings {
   payment_refund_design_id: string;
   enable_rappen_rounding: boolean;
   e_quote_type: string;
+  e_invoice_seller_email: string;
   brevo_secret: string;
   task_round_up: boolean;
   task_round_to_nearest: number;

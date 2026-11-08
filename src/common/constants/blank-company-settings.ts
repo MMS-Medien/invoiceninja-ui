@@ -184,6 +184,7 @@ export const defaultSettings = {
   default_expense_payment_type_id: '',
   classification: '',
   e_quote_type: '',
+  e_invoice_seller_email: 'user',
   brevo_secret: '',
   france_reporting_enabled: true,
   france_reporting_schedule: 'ten_day',

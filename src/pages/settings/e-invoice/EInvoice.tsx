@@ -434,6 +434,34 @@ export function EInvoice() {
                     />
                   </Element>
 
+                  <Element
+                    leftSide={
+                      <PropertyCheckbox
+                        propertyKey="e_invoice_seller_email"
+                        labelElement={
+                          <SettingsLabel
+                            label={t('e_invoice_seller_email')}
+                            helpLabel={t('e_invoice_seller_email_help')}
+                          />
+                        }
+                        defaultValue="user"
+                      />
+                    }
+                  >
+                    <SelectField
+                      value={company?.settings.e_invoice_seller_email || 'user'}
+                      onValueChange={(value) =>
+                        handleChange('settings.e_invoice_seller_email', value)
+                      }
+                      disabled={disableSettingsField('e_invoice_seller_email')}
+                      dismissable={false}
+                      customSelector
+                    >
+                      <option value="user">{t('use_user_email')}</option>
+                      <option value="company">{t('use_company_email')}</option>
+                    </SelectField>
+                  </Element>
+
                   {isCompanySettingsActive && (
                     <Element
                       leftSide={t('upload_certificate')}
